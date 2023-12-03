@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body{
+    background: rgb(26, 25, 25);
+    color: white;
+}  */
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(africa\ images/try3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px 6%;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-links li{
+ list-style: none;
+ display: inline-block;
+ margin: 10px 30px;
+ 
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.register-btn{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 20px;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 18%;
+
+}
+
+.search-bar{
+    background: white;
+    width: 48%;
+    padding: 10px 10px 6px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    
+}
+
+.search-bar form button{
+    background: #ff5361;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+  width: 15px;
+  margin-top: 8px;
+}
+
+.location-input{
+    flex: 1px;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
+
+
+/* ---------exclusives----- */
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    color: #333;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclusives div {
+    position: relative;
+}
+
+.exclusives div span{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.most-visited{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.most-visited img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.most-visited  h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-btn{
+   background: #ff5361;
+   color: white;
+   text-decoration: none;
+   padding: 12px 30px;
+   border-radius: 8px;
+   margin-top: 20px;
+   display: inline-block; 
+}
+
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stories div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories div{
+    position: relative;
+    text-align: center;
+}
+
+.stories p{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+
+.learn{
+    text-decoration: none;
+    background: #ff5361;
+    color: white;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* About Us */
+.about-staybnb{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.about-staybnb h2{
+   font-size: 28px;
+   margin-bottom: 30px;
+   font-weight: 500; 
+}
+
+
+footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+
+}
+
+footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+
+footer p{
+    padding-bottom: 15px;
+}
+nav .fa-bars{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+   .logo{
+    position: fixed;
+    top: 4%;
+    left: 7%;
+   } 
+
+   nav{
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    text-align: center;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+   }
+
+   nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+   }
+
+   .register-btn{
+     margin: 15px 0 30px;
+     display: inline-block;
+
+   }
+
+   nav .fa-bars{
+    display: block;
+    position: fixed;
+    top: 4%;
+    right: 7%;
+    font-size: 28px;
+    color: white;
+}
+
+.hidemenu{
+    max-height: 300px;
+}
+
+header h1{
+    padding-top: 300px;
+    font-size: 7vw;
+    text-align: center;
+}
+ .search-bar{
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 10px 30px;
+    border-radius: 5px;
+ }
+
+ .search-bar form{
+    display: block;
+ }
+
+ .search-bar form input{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+ }
+
+ .sub-title{
+    font-size: 6vw;
+ }
+
+ .cta{
+    padding: 15% 5%;
+
+ }
+ .cta h3{
+    font-size: 7vw;
+    line-height: 8vw;
+    
+ }
+
+ .cta p{
+    font-size: 14px;
+    
+ }
+
+ .cta-btn{
+    padding: 6px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+ }
+
+ .about-staybnb{
+    font-size: 16px;
+ }
+
+ 
+ 
+}
+
+/*------------------ Listing page------------------ */
+.nav-bar-white{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.nav-bar-white .nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-white .register-btn{
+  background: black;
+  color: white;
+}
+
+.nav-bar-white,  nav .fa-bars{
+    color: black;
+}
+
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+   color: #333;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 30px 0;
+    border-top: 1px solid black;
+}
+
+.house-imgs{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+
+
+.house-imgs img{
+   width: 100%;
+   border-radius: 12px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    font-size: 22px;
+    color: #333;
+    margin: 4px 0;
+}
+
+.house-info i{
+   color: #ff5361; 
+}
+
+.house-price{
+    text-align: right;
+}
+
+.house-price h4{
+    font-size: 20px;
+}
+
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p{
+    flex: 1;
+}
+
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+.side-bar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.side-bar-link a{
+    text-decoration: none;
+   
+
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+
+.right-arrow{
+  transform: rotate(180deg);  
+}
+
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination .current{
+   background: #333;
+   color: #fff; 
+}
+
+
+/* small screen */
+@media only screen and (max-width: 700px) {
+   .list-container{
+    margin-top: 150px;
+   }
+
+   .left-col, .right-col, .house-imgs, .house-info{
+    flex-basis: 100%;
+   }
+
+   .left-col h1{
+    font-size: 22px;
+   }
+
+   .house-info h3{
+    font-size: 18px;
+   }
+
+   .house-info i{
+    font-size: 16px;
+   }
+
+   .pagination span{
+    margin: 10px 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+   }
+}
