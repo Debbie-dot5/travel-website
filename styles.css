@@ -397,7 +397,7 @@ header h1{
   color: white;
 }
 
-.nav-bar-white,  nav .fa-bars{
+nav.nav-bar-white .fa-bars{
     color: black;
 }
 
