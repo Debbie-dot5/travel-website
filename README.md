@@ -1,3 +1,3 @@
 # travel-website
-A simple Nigerian travel  website
-Multiple Page travel website
+A simple multiple Page Nigerian travel website
+
